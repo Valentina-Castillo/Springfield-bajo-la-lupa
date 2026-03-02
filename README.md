@@ -24,6 +24,7 @@ El objetivo es responder, con datos y no con nostalgia, a la siguiente pregunta:
 ¿Sigue brillando Springfield o sus años dorados quedaron atrás?
 
 🎯 Objetivos del Proyecto
+
 Objetivo general
 
 Analizar la evolución histórica de la serie para identificar patrones de auge, estabilidad, desgaste y transformación.
@@ -41,6 +42,7 @@ Detectar cambios estructurales en el modelo de consumo audiovisual.
 Construir una experiencia interactiva basada en visualización narrativa de datos.
 
 🔎 Proceso Metodológico
+
 1️⃣ Búsqueda y selección de datasets
 
 El proyecto comenzó con una fase de investigación y búsqueda de fuentes en Kaggle.
