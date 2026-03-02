@@ -1,5 +1,6 @@
 📊 Springfield bajo la lupa
 Análisis interactivo de la evolución de The Simpsons (1989–2023)
+
 📌 Resumen Ejecutivo
 
 Springfield bajo la lupa es un proyecto de análisis y visualización interactiva desarrollado en Tableau Desktop Public Edition que examina la evolución de The Simpsons desde su estreno en 1989 hasta la temporada 34.
