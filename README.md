@@ -1,35 +1,140 @@
 📊 Springfield bajo la lupa
 Análisis interactivo de la evolución de The Simpsons (1989–2023)
+📌 Resumen Ejecutivo
 
-📌 Descripción del proyecto
+Springfield bajo la lupa es un proyecto de análisis y visualización interactiva desarrollado en Tableau Desktop Public Edition que examina la evolución de The Simpsons desde su estreno en 1989 hasta la temporada 34.
 
-Springfield bajo la lupa es un proyecto de análisis y visualización de datos desarrollado en Tableau Desktop Public Edition que estudia la evolución de The Simpsons desde su estreno en 1989 hasta la temporada 34.
+A través del análisis de métricas como rating promedio (IMDb) y audiencia en EE. UU., el proyecto estudia el ciclo de vida de una de las series más influyentes de la historia de la televisión.
 
-El objetivo principal es responder a una pregunta clara:
+El trabajo combina:
+
+Análisis exploratorio de datos (EDA)
+
+Limpieza y transformación
+
+Modelado en Tableau
+
+Storytelling visual
+
+Interactividad avanzada
+
+El objetivo es responder, con datos y no con nostalgia, a la siguiente pregunta:
 
 ¿Sigue brillando Springfield o sus años dorados quedaron atrás?
 
-El proyecto combina análisis cuantitativo (audiencia y ratings) con narrativa visual inspirada en la estética y el universo de la serie.
+🎯 Objetivos del Proyecto
+Objetivo general
 
-🎯 Objetivos
+Analizar la evolución histórica de la serie para identificar patrones de auge, estabilidad, desgaste y transformación.
 
-Analizar la evolución del rating promedio (IMDb) por temporada.
+Objetivos específicos
 
-Estudiar la caída progresiva de la audiencia en EE. UU.
+Evaluar la evolución del rating promedio por temporada.
 
-Identificar los mejores y peores episodios según valoración.
+Analizar la caída progresiva de la audiencia televisiva en EE. UU..
 
-Detectar patrones de desgaste creativo y cambios en el consumo televisivo.
+Identificar la concentración de calidad mediante el estudio de los episodios mejor y peor valorados.
 
-Presentar resultados mediante una experiencia interactiva con storytelling.
+Detectar cambios estructurales en el modelo de consumo audiovisual.
 
-🧩 Estructura del proyecto
+Construir una experiencia interactiva basada en visualización narrativa de datos.
 
-La presentación está organizada como un recorrido narrativo dividido en secciones:
+🔎 Proceso Metodológico
+1️⃣ Búsqueda y selección de datasets
+
+El proyecto comenzó con una fase de investigación y búsqueda de fuentes en Kaggle.
+
+Se analizaron múltiples datasets relacionados con The Simpsons, seleccionando finalmente dos conjuntos principales:
+
+📁 Dataset 1: Información sobre personajes.
+
+📁 Dataset 2: Información detallada de episodios (temporadas, títulos, fechas, rating IMDb, audiencia en EE. UU., etc.).
+
+La selección se basó en:
+
+Nivel de detalle disponible.
+
+Consistencia estructural.
+
+Presencia de métricas cuantificables.
+
+Potencial para análisis longitudinal.
+
+2️⃣ Exploratory Data Analysis (EDA)
+
+Antes de diseñar cualquier visualización, se realizó un proceso completo de Exploratory Data Analysis (EDA) para comprender la estructura y calidad de los datos.
+
+Durante esta fase se:
+
+Analizó el número de registros y variables.
+
+Identificaron valores nulos o inconsistencias.
+
+Revisó la distribución de ratings por temporada.
+
+Validó coherencia entre temporadas y episodios.
+
+Exploró la evolución temporal de audiencia.
+
+El objetivo fue entender exactamente con qué datos se estaba trabajando antes de construir la narrativa analítica.
+
+3️⃣ Limpieza y preparación de datos
+
+Posteriormente se realizó una fase de depuración y transformación:
+
+Eliminación de registros incompletos.
+
+Normalización de formatos (temporadas, fechas).
+
+Corrección de inconsistencias en nombres.
+
+Agrupación de variables para análisis por temporada.
+
+Cálculo de métricas agregadas (rating promedio por temporada).
+
+Preparación de tablas para comparación de episodios.
+
+Esta etapa permitió construir una base de datos sólida y coherente para visualización.
+
+4️⃣ Modelado y Visualización en Tableau
+
+Una vez depurados los datos, se desarrolló el dashboard en Tableau Desktop Public Edition.
+
+El proceso incluyó:
+
+Creación de hojas individuales por tipo de análisis.
+
+Diseño de dashboards estructurados por narrativa.
+
+Implementación de filtros dinámicos.
+
+Creación de botones de navegación entre páginas.
+
+Desarrollo de tooltips iterativos.
+
+Integración de elementos multimedia.
+
+Diseño visual alineado con la temática Simpson.
+
+Se priorizó:
+
+Claridad visual.
+
+Jerarquía informativa.
+
+Interactividad intuitiva.
+
+Coherencia estética.
+
+Storytelling estructurado.
+
+🧩 Estructura del Dashboard
+
+El proyecto está organizado como una experiencia narrativa progresiva:
 
 1️⃣ Portada – Springfield bajo la lupa
 
-Pantalla de introducción temática que presenta el enfoque del análisis.
+Pantalla introductoria con:
 
 Diseño inspirado en la identidad visual de la serie.
 
@@ -37,177 +142,228 @@ Botón de navegación para iniciar el recorrido.
 
 Enfoque narrativo desde el primer momento.
 
+Función: establecer el tono del análisis.
+
 2️⃣ Contexto general – “En el sofá desde 1989”
 
-Panel de métricas clave:
+Panel de indicadores clave:
 
-34 temporadas
+34 temporadas.
 
-746 episodios
+746 episodios.
 
-6.722 personajes
+6.722 personajes.
 
-Año de estreno: 1989
+Estreno en 1989.
 
-Sirve como marco contextual antes del análisis profundo.
+Función: dimensionar el fenómeno antes del análisis profundo.
 
-3️⃣ Evolución de rating y audiencia
+3️⃣ Evolución del rating y audiencia
 “¡Buenas noches, Springfield! Tenemos que hablar”
 
 Visualización doble:
 
-📈 Línea superior: Rating promedio por temporada (IMDb).
+📈 Línea superior → Rating promedio por temporada (IMDb).
 
-👥 Línea inferior: Audiencia en millones (EE. UU.).
+👥 Línea inferior → Audiencia promedio en millones (EE. UU.).
 
-Insight clave:
-Se observa una caída progresiva tanto en audiencia como en valoración, sin desplome abrupto, sino desgaste sostenido.
+Principales hallazgos:
 
-4️⃣ Análisis por temporadas
+Pico de valoración en primeras temporadas.
+
+Descenso progresivo a partir de temporada 8–10.
+
+Caída sostenida en audiencia.
+
+Desgaste acumulativo, no colapso repentino.
+
+4️⃣ Análisis visual por temporadas
 “Lisa lo sabía desde la temporada 1”
 
-Gráfico de burbujas donde:
+Gráfico de burbujas interactivo:
 
-🔵 El tamaño representa audiencia.
+Tamaño → audiencia.
 
-🎨 El color representa rating.
+Color → rating.
 
-Permite identificar visualmente:
+Permite identificar visualmente cinco etapas:
 
-Era dorada
+Era dorada.
 
-Estabilidad
+Estabilidad.
 
-Transición
+Transición.
 
-Caída progresiva
+Caída progresiva.
 
-Etapa de baja audiencia
+Baja audiencia sostenida.
 
 5️⃣ Mejores y peores episodios
 “Los episodios que Ned Flanders aprobaría… y los que no”
 
-Análisis comparativo:
+Comparación directa entre:
 
-Top 10 mejores episodios.
+Top 10 mejor valorados.
 
 Top 10 peor valorados.
 
-Se evidencia:
+Hallazgos:
 
-Concentración de excelencia en primeras temporadas.
+Excelencia concentrada en primeras temporadas.
 
 Mayor irregularidad en temporadas recientes.
 
 Diferencia de hasta 5 puntos entre extremos.
 
+Conclusión: pérdida de consistencia más que incapacidad creativa.
+
 6️⃣ Interpretación estratégica
 “¿Qué nos dicen los datos, señor Burns?”
 
-Conclusión ejecutiva estructurada en cuatro causas:
+Síntesis analítica en cuatro factores:
 
 Desgaste creativo inevitable.
 
 Cambio acelerado del contexto cultural.
 
-Competencia del streaming e internet.
+Competencia del streaming.
 
 Fin del fenómeno “evento TV”.
 
-Cierre estratégico:
+Conclusión estratégica:
 
-No necesita ser fenómeno. Solo necesita ser rentable.
+La serie no necesita ser fenómeno cultural. Solo necesita ser rentable.
 
-⚙️ Funcionamiento e interactividad
+⚙️ Interactividad y Funcionamiento
 
-El dashboard fue diseñado como una experiencia navegable y dinámica.
-
-🔁 Etiquetas iterativas
-
-Tooltips dinámicos que muestran información detallada al pasar el cursor.
-
-Etiquetas explicativas que refuerzan el storytelling.
-
-Indicadores visuales que cambian según selección.
+El dashboard fue diseñado como una experiencia navegable e iterativa.
 
 🔘 Botones de navegación
 
-Botones personalizados que permiten avanzar entre secciones.
+Botones personalizados para avanzar entre páginas.
 
-Navegación fluida tipo “presentación interactiva”.
+Flujo lineal tipo presentación interactiva.
 
-Organización en pestañas conectadas.
+Experiencia guiada pero exploratoria.
+
+🔁 Etiquetas iterativas (Tooltips dinámicos)
+
+Información detallada al pasar el cursor.
+
+Contextualización adicional sin sobrecargar visualmente.
+
+Refuerzo del storytelling.
 
 🎛️ Filtros dinámicos
 
-Selección de categorías como:
+Selección por temporada.
 
-Obras maestras
+Segmentación por categorías:
 
-Catástrofes de Springfield
+Obras maestras.
 
-Interacción por temporada.
+Catástrofes de Springfield.
 
-Filtrado por año.
+Actualización dinámica de gráficos según selección.
 
-🎥 Integración de vídeo
+🎥 Integración multimedia
 
-Inclusión de referencias audiovisuales (YouTube embebido).
+Inclusión de referencias audiovisuales.
 
-Refuerza la conexión emocional con episodios icónicos.
+Conexión entre datos cuantitativos y memoria cultural.
 
-Complemento narrativo del análisis cuantitativo.
+Refuerzo emocional del análisis.
 
-🎨 Enfoque visual y temático
+🎨 Diseño y Enfoque Visual
 
-El proyecto integra:
+El diseño cumple una función estratégica:
 
 Tipografía inspirada en la serie.
 
-Personajes como elementos narrativos (Lisa, Burns, Flanders).
+Uso de personajes como recurso narrativo.
 
-Uso estratégico de color:
+Color aplicado como variable semántica:
 
-Amarillos para excelencia.
+Amarillo → excelencia.
 
-Rojos/naranjas para declive.
+Tonos cálidos → transición.
 
-Storytelling estructurado como informe ejecutivo dentro del universo Simpson.
+Rojos → declive.
 
-No es solo un dashboard. Es una experiencia narrativa basada en datos.
+Principio aplicado:
 
-🛠️ Tecnologías utilizadas
+Visualización de datos + narrativa temática = mayor retención cognitiva.
+
+📊 Dataset
+
+Variables principales utilizadas:
+
+Temporada
+
+Año
+
+Título del episodio
+
+Rating IMDb
+
+Audiencia en millones (EE. UU.)
+
+Personajes
+
+Análisis longitudinal de 34 temporadas.
+
+🛠️ Tecnologías Utilizadas
 
 Tableau Desktop Public Edition
 
-Dataset de episodios (rating IMDb + audiencia por temporada)
+Kaggle (fuente de datos)
+
+Procesamiento y limpieza de datos
 
 Diseño gráfico personalizado
 
 Integración multimedia
 
-📈 Conclusiones principales
+📈 Conclusiones Finales
 
 La audiencia presenta una caída constante desde su máximo histórico.
 
-Los mejores episodios se concentran en las primeras temporadas.
+La calidad percibida disminuye progresivamente.
 
-La percepción de calidad disminuye con el tiempo.
+Los mejores episodios se concentran en las primeras temporadas.
 
 La serie continúa debido a su valor de marca y rentabilidad.
 
-El fenómeno masivo se transformó en contenido de catálogo.
+El cambio estructural en el consumo audiovisual explica su transformación.
 
-🚀 Posibles mejoras futuras
+La serie dejó de ser fenómeno masivo, pero se consolidó como producto cultural de largo ciclo de vida.
 
-Incorporar análisis de sentimiento por guion.
+🚀 Futuras mejoras
 
-Estudio comparativo con otras series animadas.
+Análisis de sentimiento de guiones.
+
+Comparativa con otras series animadas.
 
 Modelo predictivo de rating por temporada.
 
-Dashboard optimizado para versión mobile.
+Incorporación de métricas de streaming.
 
-👩‍💻 Autoría
+Versión optimizada para mobile.
 
-Proyecto desarrollado como análisis de visualización de datos aplicado a narrativa interactiva.
+🧩 Valor del Proyecto
+
+Este proyecto demuestra:
+
+Capacidad de análisis longitudinal.
+
+Dominio del proceso completo de Data Analytics.
+
+Diseño de dashboards con narrativa integrada.
+
+Implementación de interactividad avanzada.
+
+Comunicación ejecutiva basada en datos.
+
+👩‍💻 Autoras: Ana María Castro y Valentina Castillo Escobar
+
+Proyecto desarrollado como análisis integral de datos aplicado a narrativa interactiva y visualización estratégica.
